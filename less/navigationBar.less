@@ -609,6 +609,16 @@
   background-size: 14px 14px;
 }
 
+.noScriptButtonContainer {
+    display: flex;
+    margin-left: 6px;
+
+    .noScript {
+      font-size: 16px;
+      color: @braveOrange;
+  }
+}
+
 #navigator {
   .bookmarkButtons {
     display: flex;
@@ -849,11 +859,6 @@
     &.onFocus {
         display: none;
     }
-  }
-
-  .noScript {
-    font-size: 16px;
-    color: @braveOrange;
   }
 
   /* Disable selection of button text */

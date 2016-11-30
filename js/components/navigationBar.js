@@ -192,12 +192,14 @@ class NavigationBar extends ImmutableComponent {
           {
             !this.showNoScriptInfo
             ? null
-            : <Button iconClass='fa-ban'
-              l10nId='noScriptButton'
-              className={cx({
-                'noScript': true
-              })}
-              onClick={this.onNoScript} />
+            : <span className='noScriptButtonContainer'>
+              <Button iconClass='fa-ban'
+                l10nId='noScriptButton'
+                className={cx({
+                  'noScript': true
+                })}
+                onClick={this.onNoScript} />
+            </span>
           }
         </div>
       }
