@@ -4,6 +4,16 @@
 
 @import "variables.less";
 
+button[class*="Button"] {
+  background: none;
+  outline: none;
+  border: none;
+  margin: 0;
+  white-space: nowrap;
+  width: auto;
+  height: auto;
+}
+
 span.buttonSeparator {
   width: 1px;
   border-left: 1px solid #e2e2e2;
@@ -84,9 +94,6 @@ span.menuButton {
     line-height: 1.25;
     margin: 5px 5px 0px 0px;
     padding: .3rem 1rem;
-    white-space: nowrap;
-    width: auto;
-    height: auto;
   }
 
   &.primaryButton {
